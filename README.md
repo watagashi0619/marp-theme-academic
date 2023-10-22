@@ -18,3 +18,16 @@ instant preview is [here](https://watagashi0619.github.io/marp-theme-academic/de
 ![](./demo.005.png)
 ![](./demo.006.png)
 ![](./demo.007.png)
+
+## how to use
+
+1. Install the Marp plugin in vscode.
+
+2. Paste the following codes in you VS Code Settings(`settings.json`).
+
+```json
+  "markdown.marp.themes": [
+    "https://raw.githubusercontent.com/watagashi0619/marp-theme-academic/main/themes/academic.css"
+  ],
+  "markdown.marp.enableHtml": true
+```
