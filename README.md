@@ -9,6 +9,8 @@
 
 ## preview
 
+instant preview is [here](https://watagashi0619.github.io/marp-theme-academic/demo.html)!
+
 ![](./demo.001.png)
 ![](./demo.002.png)
 ![](./demo.003.png)
