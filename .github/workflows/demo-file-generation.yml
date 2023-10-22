@@ -19,6 +19,10 @@ jobs:
         run: |
           docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli demo.md --theme themes/academic.css --images --html --allow-local-files
 
+      - name: generate html
+        run: |
+          docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="ja_JP.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli demo.md --theme themes/academic.css --html --allow-local-files
+
       - name: commit & push
         run: |
           git add -A
