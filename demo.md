@@ -7,9 +7,9 @@ math: katex
 
 <!-- _class: lead -->
 
-# Marpで研究室の発表スライドを作る
+# Marp で研究室の発表スライドを作る
 
-#### 〜Beamerを卒業しよう〜
+#### 〜Beamer を卒業しよう〜
 
 <br>
 
@@ -63,7 +63,9 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 <!-- _header: 数式 -->
 
-$$ I_{xx}=\int\int_Ry^2f(x,y)\cdot{}dydx $$
+$$
+I_{xx}=\iint_Ry^2f(x,y)dydx
+$$
 
 $$
 f(x) = \int_{-\infty}^\infty
@@ -73,6 +75,40 @@ $$
 
 こんな感じで数式を書くことができる。もちろんインラインの $\LaTeX$ も使える。  
 ついでに絵文字も使える:smile:
+
+---
+
+<!-- _header: 囲み（greencolorbox/bluecolorbox） -->
+
+<div class="greencolorbox">
+<span class="box-title">
+
+$\sigma$-加法族（$\sigma$-field）
+
+</span>
+
+$\Omega$ の部分集合 $\mathcal{F}$ が $\Omega$ 上の<b>$\sigma$-加法族</b>であるとは
+
+- $\Omega\in\mathcal{F}$
+- $A\in\mathcal{F}$ ならば $A^c\in\mathcal{F}$
+- $\{A_n\}\subset\mathcal{F}$ ならば $\bigcup_{n=1}^\infty A_n\in\mathcal{F}$
+
+をいう。このとき $(\Omega,\mathcal{F})$ を**可測空間**といい、 $\mathcal{F}$ の元を**可測集合**という。
+
+</div>
+
+<div class="bluecolorbox">
+<span class="box-title">優収束定理（Dominated Convergence Theorem; DCT）</span>
+
+$\{f_n\}$ が可測関数列で、各点 $\omega$ で $f_n(\omega)\to f(\omega)$ であり、さらにある非負可積分関数 $g$ が存在して、各点 $\omega$ で $\sup_n |f_n(\omega)|\leq g(\omega)$ であるとき
+
+$$
+\int f_nd\mu\to\int fd\mu
+$$
+
+が成り立つ。
+
+</div>
 
 ---
 

@@ -1,21 +1,23 @@
 /* @theme academic */
 
 @import 'gaia';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {
   --color-background: #fff;
-  --color-foreground: #333;
-  --color-highlight: #800000;
+  --color-foreground: #000;
+  --color-highlight: #1436C4;
 }
 
 section {
   background-image: none;
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
   padding-top: 90px;
   padding-left: 40px;
   padding-right: 40px;
+  font-size: 24px;
 }
 
 /* https://github.com/marp-team/marpit/issues/271 */
@@ -24,54 +26,52 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 
-ul ul {
-  font-size: 0.9em;
-}
+/* deleted ul setting */
 
 section.lead h1 {
-  color: #800000;
+  color: #1436C4;
   text-align: left;
 }
 section.lead h1 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #1436C4;
 }
 section.lead h2 {
-  color: #800000;
+  color: #1436C4;
   text-align: left;
 }
 section.lead h2 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #1436C4;
 }
 section.lead h3 {
-  color: #800000;
+  color: #1436C4;
   text-align: left;
 }
 section.lead h3 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #1436C4;
 }
 section.lead h4 {
-  color: #800000;
+  color: #1436C4;
   text-align: left;
 }
 section.lead h4 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #1436C4;
 }
 section.lead h5 {
-  color: #800000;
+  color: #1436C4;
   text-align: left;
 }
 section.lead h5 strong {
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px #1436C4;
 }
 section.lead p {
   text-align: right;
 }
 
 header {
-  background-color: #800000;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
+  border-bottom: 6px solid #1436C4;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 blockquote {
@@ -91,6 +91,65 @@ blockquote::after {
 img[alt~="center"] {
   display: block;
   margin: 0 auto;
+}
+
+.bluecolorbox {
+  position: relative;
+  padding: 1.5em 1em 1em 1em;
+  margin: 1em 0.5em;
+  background: #FFF;
+  border: solid 3px #1436C4;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.bluecolorbox .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 1em;
+  background: #FFF;
+  color: #1436C4;
+  font-weight: bold;
+}
+
+.bluecolorbox p {
+  margin: 0; 
+  padding: 0;
+}
+
+.greencolorbox {
+  position: relative;
+  padding: 1.5em 1em 1em 1em;
+  margin: 1em 0.5em;
+  background: #FFF;
+  border: solid 3px #00881e;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.greencolorbox .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 1em;
+  background: #FFF;
+  color: #00881e;
+  font-weight: bold;
+}
+.greencolorbox p {
+  margin: 0; 
+  padding: 0;
+}
+
+/* katex Japanese font */
+.cjk_fallback {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 80%;
 }
 
 code {
