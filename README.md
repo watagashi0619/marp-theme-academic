@@ -31,3 +31,11 @@ instant preview is [here](https://watagashi0619.github.io/marp-theme-academic/de
   ],
   "markdown.marp.enableHtml": true
 ```
+
+## tips
+
+- You can use javascript by adding a script tag to the beginning of the markdown file.
+  - TikZJax
+  - draw.io
+  - mermaid
+  - etc...
